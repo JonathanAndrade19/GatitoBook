@@ -33,7 +33,11 @@
                    novoUsuarioFrom.get('userName')?.touched"
             mensagem="Usuário deve ser em letra minúscula"
         >
-            
+        </app-mensagem>
+        <app-mensagem 
+            *ngIf="novoUsuarioFrom.get('userName')?.errors?.usuarioExistente"
+            mensagem="Usuário já existe"
+        >
         </app-mensagem>
     </div>
 
