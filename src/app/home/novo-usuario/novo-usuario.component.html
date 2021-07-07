@@ -49,6 +49,11 @@
             mensagem="Senha deve conter 6 Caracteres"
         >
         </app-mensagem>
+        <app-mensagem
+            *ngIf="novoUsuarioFrom.errors?.senhaIgualUsiario"
+            mensagem="Senha deve ser diferente do usuário"
+        >
+        </app-mensagem>
     </div>
 
     <div class="d-grid gap-2">
