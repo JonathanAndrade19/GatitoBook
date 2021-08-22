@@ -5,10 +5,11 @@ import { AnimaisRoutingModule } from './animais-routing.module';
 import { ListaAnimaisComponent } from './lista-animais/lista-animais.component';
 import { CabecalhoModule } from '../componentes/cabecalho/cabecalho.module';
 import { RodapeModule } from '../componentes/rodape/rodape.module';
+import { AnimalComponent } from './animal/animal.component';
 
 
 @NgModule({
-  declarations: [ListaAnimaisComponent],
+  declarations: [ListaAnimaisComponent, AnimalComponent],
   imports: [
     CommonModule,
     AnimaisRoutingModule,
