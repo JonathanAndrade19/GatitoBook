@@ -8,10 +8,11 @@ import { CartaoModule } from './../componentes/cartao/cartao.module';
 import { RodapeModule } from '../componentes/rodape/rodape.module';
 import { AnimaisRoutingModule } from './animais-routing.module';
 import { AnimalComponent } from './animal/animal.component';
+import { DetalheAnimalComponent } from './detalhe-animal/detalhe-animal.component';
 
 
 @NgModule({
-  declarations: [ListaAnimaisComponent, AnimalComponent, GradeFotosAnimaisComponent],
+  declarations: [ListaAnimaisComponent, AnimalComponent, GradeFotosAnimaisComponent, DetalheAnimalComponent],
   imports: [
     CommonModule,
     AnimaisRoutingModule,
