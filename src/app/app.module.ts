@@ -1,9 +1,10 @@
-import { RodapeModule } from './componentes/rodape/rodape.module';
-import { CabecalhoModule } from './componentes/cabecalho/cabecalho.module';
+import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
+import { CabecalhoModule } from './componentes/cabecalho/cabecalho.module';
+import { AutenticacaoModule } from './autenticacao/autenticacao.module';
+import { RodapeModule } from './componentes/rodape/rodape.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -16,7 +17,8 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     HttpClientModule,
     CabecalhoModule,
-    RodapeModule
+    RodapeModule,
+    AutenticacaoModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
